@@ -1,0 +1,59 @@
+body{
+    width: 100%;
+    margin: 0;
+    
+    font-size: 18px;
+}
+.contentor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:80px;
+}
+.cabecalho {
+     width: 100%;
+     background-color: #E8521A;
+     color: white;   
+     text-align: center;
+     position: fixed;
+}
+
+.bloco-m{
+    width: 50%;
+    background-color: white;
+    padding: 25px;
+}
+h1{
+    font-size: 250%;
+    font-weight: 300;
+    transition: border,font-size 100ms 50ms;
+}
+h3{
+    font-size: 200%;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.TAzul{
+    color:blue;
+    border-left: blue 5pt solid;
+}
+.TRoxo{
+    color:#A802F8;
+    border-left: #A802F8 5pt solid;
+}
+
+.titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+.corpo{
+    font-family: 'Cambria', Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 18pt;
+    text-align: justify;
+}
+.linha{
+    width:100%;
+    padding:0, 40px,0,40px;
+    display: flex;
+    height:1900px;
+}

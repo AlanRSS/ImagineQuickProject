@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,7 +7,7 @@ using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Hackathon
+namespace Imagine
 {
     public class Startup
     {
@@ -21,16 +21,18 @@ namespace Hackathon
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
-            app.UseDefaultFiles();
             app.UseStaticFiles();
-            /*app.UseMvc(config => {
-                name: "Default",
-                template: "{controller}/{actoin}/{id?}",
-                defaults: new { controller = "Hack", action = "Inicial"}
-            });*/
+            app.UseMvc(config =>
+            {
+                config.MapRoute(
+name: "default",
+template: "{controller}/{action}/{id?}",
+defaults: new { controller = "Hack", action = "Index" }
+);
+            });
         }
 
         // Entry point for the application.
-        public static void Main(string[] args) => Microsoft.AspNet.Hosting.WebApplication.Run<Startup>(args);
+        public static void Main(string[] args) => WebApplication.Run<Startup>(args);
     }
 }
