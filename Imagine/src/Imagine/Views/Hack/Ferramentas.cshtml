@@ -1,0 +1,55 @@
+﻿<div ng-controller="ferramentas as f" style="display: flex; -ms-flex-wrap: wrap;-webkit-flex-wrap: wrap;
+flex-wrap: wrap; width:100%; overflow:auto; padding-top: 20px; padding-bottom:90px;">
+    <div class="bloco1">
+        <div class="ASP caixa">
+            <div class="titulo">
+                <a class="T2">{{f.plat.nome}}</a>
+            </div>
+            <div class="corpoW">
+                {{f.plat.texto}}
+                <p>
+                    <ul>
+                        <li ng-repeat="bullet in f.plat.bullets">{{bullet}}</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bloco6" ng-repeat="tpa in f.tpa">
+        <div class="TPA caixa">
+            <div class="titulo">
+                <a class="T2">{{tpa.nome}}</a>
+            </div>
+            <div class="imagem-caixa caixab">
+                <img class="imagem" src={{tpa.src}} />
+            </div>
+            <div class="corpoW">
+                {{tpa.texto}}
+                <p>
+                    <ul>
+                        <li ng-repeat="bullet in tpa.bullets">{{bullet}}</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bloco2" ng-repeat="ide in f.ide">
+        <div class="VS caixa">
+            <div class="titulo">
+                <a class="T2">{{ide.nome}}</a>
+            </div>
+            <div class="imagem-caixa caixab">
+                <img class="imagem" src={{ide.src}} />
+            </div>
+            <div class="corpoW">
+                {{ide.texto}}
+                <p>
+                    <ul>
+                        <li ng-repeat="bullet in ide.bullets">{{bullet}}</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</div>

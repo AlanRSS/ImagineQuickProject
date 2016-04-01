@@ -1,0 +1,14 @@
+<div ng-controller="home as m" style="display: flex; -ms-flex-wrap: wrap;-webkit-flex-wrap: wrap;
+flex-wrap: wrap; width:100%; overflow:auto; padding-top: 20px; padding-bottom:90px;">
+    <div class="bloco3" ng-repeat="object in m.objects" ng-click = selectTab(object.id)>
+        <div class="caixa">
+            <div class="cHeader titulo">
+                <a class="T2">{{object.nome}}</a>
+            </div>
+            <div class="imagem-caixa">
+                <img class="imagem" alt="Ferramenta" src={{object.src}} />
+            </div>
+            <div class="corpo">{{object.texto}}<a> Clique aqui para saber mais!</a></div>
+        </div>
+    </div>
+</div>

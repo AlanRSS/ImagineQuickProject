@@ -4,67 +4,29 @@
 @{
 }
 <!DOCTYPE html>
-<html>
+<html ng-app="Imagine">
 <head>
-    <title>Hack</title>
+    <title>{{"Hack"}}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="~/wwwroot/lib/angular/angular.js"></script>
+    <script src="~/js/App.js"></script>
+    <script src="~/wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    
 </head>
-<body>
-    <div class="header">
-        <h1>Dicas para o Imagine!</h1>
+<body ng-controller="home as m">
+    <div class="header titulo" ng-click="selectTab(1)">
+        <a class="T1">Dicas para o Imagine <span class="T1b" >Cup</span></a>
     </div>
-    <div class="pagina">
-        <h2>As Ferramentas</h2>
-        <div class="linha">
-            <div class="bloco1">
-                <h2>Plataforma</h2>
-                <div class="titulo">
-                    <h3>ASP.NET</h3>
-                </div>
-                <div><img src="" alt="" /></div>
-                <div class="corpo">
-                    Eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu.
-                </div>
-            </div>
-        </div>
-        <div class="linha">
-            <h2>IDE's</h2>
-            <div class="bloco2">
-                <div class="titulo">
-                    <h3>Visual Studio</h3>
-                </div>
-                <div><img src="" alt="" /></div>
-                <div class="corpo">
-                    Eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu.
-                </div>
-            </div> 
-            <div class="bloco2">
-                <div class="titulo">
-                    <h3>Visual Studio Code</h3>
-                </div>
-                <div><img src="" alt="" /></div>
-                <div class="corpo">
-                    Eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum velit mollis odio sollicitudin lacinia aliquam posuere, sapien elementum lobortis tincidunt, turpis dui ornare nisl, sollicitudin interdum turpis nunc eget sem nulla eu ultricies orci praesent id augue nec lorem pretium congue sit amet ac nunc fusce iaculis lorem eu.
-                </div>
-            </div>
-        </div>
-        <div class="linha">
-            <h2>3rd Party Libs</h2>
-            <div class="bloco4">
+    <div id="p1" class="pagina" ng-include="'../Hack/Main'"></div>
+    <div id="p2" class="pagina" ng-include="'../Hack/Ferramentas'" style="display: none"></div>
+    <div id="p3" class="pagina" ng-include="'../Hack/Team'" style="display: none"></div>
+    <div id="p4" class="pagina" ng-include="'../Hack/Eu'" style="display: none"></div>
 
-            </div>
-       
-            <div class="bloco4">
-
-            </div>
-            <div class="bloco4">
-
-            </div>
-            <div class="bloco4">
-
-            </div>
-        </div>
-    </div>
+    <footer>
+        "Para conduzir o desenvolvimento precisamos de <span class="T1b">INOVAR</span>, a <span class="T1b">IMAGINAÇÃO</span> é o veículo que nos permite alcançar esta meta e a <span class="T1b">CURIOSIDADE</span> é o combústivel que o alimenta."
+        <br />   Alan Santos
+    </footer>
 </body>
 </html>

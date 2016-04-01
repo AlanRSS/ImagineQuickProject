@@ -15,5 +15,23 @@ namespace Imagine.Controllers
         {
             return View();
         }
+        public IActionResult Main()
+        {
+            return View();
+        }
+        public IActionResult Ferramentas()
+        {
+            return View();
+        }
+        public IActionResult Team()
+        {
+            return View();
+        }
+        public IActionResult Eu()
+        {
+            return View();
+        }
+
+
     }
 }

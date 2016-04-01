@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3ED754FB-DBD8-4357-AE20-E188CB397134}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		WE-Palette.css = WE-Palette.css
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Imagine", "src\Imagine\Imagine.xproj", "{B8798BC9-0825-4764-A052-A80C55FF9DFF}"
