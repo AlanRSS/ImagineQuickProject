@@ -10,14 +10,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="~/css/style.css" rel="stylesheet" />
+    <script src="~/wwwroot/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/wwwroot/lib/angular/angular.js"></script>
     <script src="~/js/App.js"></script>
-    <script src="~/wwwroot/lib/jquery/dist/jquery.min.js"></script>
-    
+
+
 </head>
 <body ng-controller="home as m">
     <div class="header titulo" ng-click="selectTab(1)">
-        <a class="T1">Dicas para o Imagine <span class="T1b" >Cup</span></a>
+        <a class="T1">Dicas para o Imagine <span class="T1b">Cup</span></a>
     </div>
     <div id="p1" class="pagina" ng-include="'../Hack/Main'"></div>
     <div id="p2" class="pagina" ng-include="'../Hack/Ferramentas'" style="display: none"></div>
@@ -25,8 +26,8 @@
     <div id="p4" class="pagina" ng-include="'../Hack/Eu'" style="display: none"></div>
 
     <footer>
-        "Para conduzir o desenvolvimento precisamos de <span class="T1b">INOVAR</span>, a <span class="T1b">IMAGINAÇÃO</span> é o veículo que nos permite alcançar esta meta e a <span class="T1b">CURIOSIDADE</span> é o combústivel que o alimenta."
-        <br />   Alan Santos
+        "Para conduzir o desenvolvimento precisamos de <span class="T1b">INOVAR</span>. A <span class="T1b">IMAGINAÇÃO</span> é o veículo que nos permite alcançar esta meta e a <span class="T1b">CURIOSIDADE</span> é o combústivel que a alimenta."
+        <br />   Alan Santos <a href="https://www.linkedin.com/in/alan-santos-023103a1"><img src="~/images/in.png" style="max-width: 20px" /></a>
     </footer>
 </body>
 </html>

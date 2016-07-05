@@ -164,7 +164,7 @@ footer {
     font-family: 'Bookman Old Style';
     font-size: 130%;
 }
-@media screen and (max-width:739px) {
+@media screen and (min-width:1111px) {
 .bloco1 {
     width: 100%;
 }
@@ -174,7 +174,7 @@ footer {
     height: 650px;
 }
 .bloco3 {
-    height: 450px;
+    height: 400px;
     width: 33.3333333%;
     overflow: auto;
     -moz-box-sizing: border-box;
@@ -191,5 +191,78 @@ footer {
 }
 
 }
-@media screen and (min-width : 740px) {
+@media screen and (max-width : 740px) {
+    .bloco1 {
+    width: 100%;
+}
+.T1{
+    font-size: 200%;
+}
+.T2{
+    font-size: 120%;
+}
+
+.bloco2 {
+    width: 100%;
+    height: 750px;
+    order: 1;
+}
+.bloco3 {
+    height: 450px;
+    width: 100%;
+    overflow: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bloco6 {
+    width: 100%;
+    height: 450px;
+    overflow: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    order: 2;
+}
+footer{
+    font-size: 70% !important;
+    height: 80px;
+}
+.header{
+    font-size: 70% !important;
+}
+.corpoW{
+    font-size: 83% !important;
+}
+
+}
+
+@media screen and (min-device-width : 741px) and (max-device-width : 1111px) {
+.bloco1 {
+    width: 100%;
+}
+
+.bloco2 {
+    width: 50%;
+    height: 750px;
+    order: 1
+}
+.bloco3 {
+    height: 450px;
+    width: 33.3333333%;
+    overflow: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.bloco6 {
+    width: 33.3333333%;
+    height: 450px;
+    overflow: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    order: 2
+}
+
 }

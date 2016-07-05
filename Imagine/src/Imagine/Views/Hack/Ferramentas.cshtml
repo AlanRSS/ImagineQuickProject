@@ -1,6 +1,6 @@
 ﻿<div ng-controller="ferramentas as f" style="display: flex; -ms-flex-wrap: wrap;-webkit-flex-wrap: wrap;
 flex-wrap: wrap; width:100%; overflow:auto; padding-top: 20px; padding-bottom:90px;">
-    <div class="bloco1">
+    <div class="bloco1" ng-click="f.move(f.plat.url)">
         <div class="ASP caixa">
             <div class="titulo">
                 <a class="T2">{{f.plat.nome}}</a>
@@ -15,7 +15,7 @@ flex-wrap: wrap; width:100%; overflow:auto; padding-top: 20px; padding-bottom:90
             </div>
         </div>
     </div>
-    <div class="bloco6" ng-repeat="tpa in f.tpa">
+    <div class="bloco6" ng-repeat="tpa in f.tpa" ng-click="f.move(tpa.url)">
         <div class="TPA caixa">
             <div class="titulo">
                 <a class="T2">{{tpa.nome}}</a>
@@ -33,7 +33,7 @@ flex-wrap: wrap; width:100%; overflow:auto; padding-top: 20px; padding-bottom:90
             </div>
         </div>
     </div>
-    <div class="bloco2" ng-repeat="ide in f.ide">
+    <div class="bloco2" ng-repeat="ide in f.ide" ng-click="f.move(ide.url)">
         <div class="VS caixa">
             <div class="titulo">
                 <a class="T2">{{ide.nome}}</a>
